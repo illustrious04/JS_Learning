@@ -1,0 +1,41 @@
+// Array Methods 
+/*
+1- Push() : Add to end
+2- Pop() : delete from end & return
+3- toString() : converts array to string. Origional array will not be touched. 
+4- concat() : Joins multiple array and returns result. It will not change the origional array it will create new array.
+5- unshift() : Add to start, it is equivalent to push method.
+6- shift() : Delete from start and returns
+*/
+
+console.log("----------------Push() Method----------------")
+
+let food_items = ["Potato", "Tomato"]
+food_items.push("Chips","Burger")
+console.log(food_items)
+
+console.log("----------------Pop() Method----------------")
+
+food_items.pop()
+console.log(food_items)
+
+console.log("----------------toString() Method----------------")
+console.log(food_items.toString())
+
+console.log("----------------concat() Method----------------")
+let marvelHeroes = ["Iron Man", "Captain America", " Ant Man"]
+let dcHeroes = ["Bat Man", "Super Man"]
+
+let heroes = marvelHeroes.concat(dcHeroes);
+console.log(heroes)
+
+console.log(marvelHeroes)
+console.log(dcHeroes)
+
+console.log("----------------unshift() Method----------------")
+marvelHeroes.unshift("Thor")
+console.log(marvelHeroes)
+
+console.log("----------------shift() Method----------------")
+marvelHeroes.shift()
+console.log(marvelHeroes)
